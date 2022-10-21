@@ -1,7 +1,13 @@
 from fastapi import FastAPI
 app = FastAPI()
 
-@app.get("/")
+users=[]
 
-async def root():
-    return {"key":"value"}
+@app.get("/users")
+async def get_users():
+    return users
+
+@app.post("/users")
+async def create_user(user):
+    users.append(user)
+    return "succes posted"
