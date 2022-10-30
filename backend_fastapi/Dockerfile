@@ -4,4 +4,4 @@ COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 COPY . .
 EXPOSE 8000
-ENTRYPOINT ["uvicorn","main:app" ,"--reload"]
+ENTRYPOINT ["uvicorn","main:app","--host=0.0.0.0" ,"--reload"]
