@@ -6,7 +6,6 @@ metadata:
     app: postgres
 spec:
   storageClassName: microk8s-hostpath
-  capacity:
   accessModes:
     - ReadWriteOnce
   resources:
