@@ -1,0 +1,18 @@
+FROM node:16.14.2 
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 8080
+
+CMD ["/bin/sh","./docker_entrypoint.sh"]
+
+
+# build the image 
+
+#docker build -t nomImage .
+
+# run the image and do a test
+
+#docker run  --network=host    -e SERVICE_KEYCLOAK="ip de keycloak+ port" -e REALM="test-realm"
+#       -e CLIENT_ID="app-vue-id" -e SERVICE_API="ip sercice de fast api"  nomImage

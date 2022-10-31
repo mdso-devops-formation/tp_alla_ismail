@@ -13,13 +13,13 @@ spec:
     spec:
       containers:
       - name: vue
-        image: allaismail/image-front:latest
+        image: allaismail/fronten:latest
         env:
-        - name: IP
+        - name: IP_API
           value: "localhost"
-        - name: PORT
-          value: "3000"
+        - name: PORT_API
+          value: "8080"
         - name: PROTOCOL
           value: "http"
         ports:
-        - containerPort: 4000
+        - containerPort: 8080
