@@ -6,5 +6,5 @@ metadata:
     app: postgres
 data:
   POSTGRES_DB: fastapi_database
-  POSTGRES_USER: myuser
+  POSTGRES_USER: postgres
   POSTGRES_PASSWORD: password
