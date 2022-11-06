@@ -18,8 +18,8 @@ spec:
         - name: IP_API
           value: "10.64.140.43"
         - name: PORT_API
-          value: "8000"
+          value: "3000"
         - name: PROTOCOL
           value: "http"
         ports:
-        - containerPort: 8080
+        - containerPort: 8000
